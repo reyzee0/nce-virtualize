@@ -1,3 +1,6 @@
+<p align="center"><img src="https://i.ibb.co/d01CTnMj/NCE-Virtualize.png" alt="project-image"></p>
+
+
 # NCE Virtualize CLI
 
 Irreversible PHP virtualization into custom bytecode for production, with built-in integrity checks and AES encryption support for your PHP projects.
