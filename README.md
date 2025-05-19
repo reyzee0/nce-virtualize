@@ -27,3 +27,41 @@ Irreversible PHP virtualization into custom bytecode for production, with built-
 
 ```bash
 php protect.php help
+```
+
+### 2. Virtualize Critical Files
+
+Converts specified PHP files under a directory into bytecode and replaces the originals:
+
+```bash
+php protect.php virtualize config
+```
+
+- **Output**: `.nce-bytecode/*.vm` and updated loader stubs
+
+### 3. Encrypt Config Files
+
+AES-256-CBC encrypt specified files into `.nce-config/`:
+
+```bash
+php protect.php encrypt-config config/database.php .env
+```
+
+- **Key**: Stored once as `.nce-config-key` (base64)  
+- **Output**: `.nce-config/database.php.enc`, etc.
+
+## 🔧 Customization
+
+- **Exclude additional folders**: edit `$excludeDirs` in `protect.php`  
+- **Change bytecode folder**: modify the `VM_DIR` constant  
+- **Use a random IV**: replace the fixed-IV logic in `encrypt-config`
+
+## ⚠️ Important
+
+- Always keep your `.nce-config-key` safe and out of version control  
+- Back up your original PHP files before virtualization  
+- Virtualized code cannot be reversed back to PHP source
+
+## ❤️ Contribute & Support
+
+If you find this tool useful, please ⭐️ [star on GitHub](https://github.com/reyzee0/nce-virtualize)!
