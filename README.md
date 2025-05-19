@@ -1,5 +1,5 @@
 # rce-virtualize
-=======
+
 # NCE Virtualize CLI
 
 Irreversible PHP virtualization into custom bytecode for production, with built-in integrity checks and AES encryption support for your PHP projects.
