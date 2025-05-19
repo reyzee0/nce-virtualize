@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.ibb.co/d01CTnMj/NCE-Virtualize.png" alt="project-image"></p>
+<div align="center"><img src="https://i.ibb.co/d01CTnMj/NCE-Virtualize.png"></div>
 
 
 # NCE Virtualize CLI
